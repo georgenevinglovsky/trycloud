@@ -17,7 +17,7 @@ public class LoginPage {
     @FindBy(xpath = "//input[@id = 'submit-form']")
     public WebElement loginbtn;
 
-    @FindBy(xpath = "//p[@class='warning throttledMsg']")
+    @FindBy(xpath = "//p[@class='warning wrongPasswordMsg']")
     public WebElement errorMessage;
     public void login(){
         username.sendKeys(ConfigurationReader.getProperty("username"));
