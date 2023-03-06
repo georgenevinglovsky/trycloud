@@ -1,6 +1,6 @@
 package com.trycloud.step_definition;
 
-import com.trycloud.page.FilePage;
+import com.trycloud.page.FilesPage;
 import com.trycloud.page.LoginPage;
 import com.trycloud.utilities.ConfigurationReader;
 import com.trycloud.utilities.Driver;
@@ -11,7 +11,7 @@ import org.junit.Assert;
 
 public class US10_FileModule {
 LoginPage loginPage =new LoginPage();
-FilePage filePage = new FilePage();
+FilesPage filePage = new FilesPage();
     @Given(": user logged in successfully and on the home page")
     public void user_logged_in_successfully_and_on_the_home_page() {
         loginPage.login();
