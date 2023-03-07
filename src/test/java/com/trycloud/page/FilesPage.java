@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FilesPage {
@@ -12,9 +13,23 @@ public class FilesPage {
     public FilesPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//a[@aria-label='Files']")
-    public WebElement fileLink;
+    @FindBy(xpath = "//span[@class='innernametext']")
+    public List<WebElement> fileAndFolderList;
 
-    @FindBy(xpath = "//a[@class='action action-menu permanent']")
+    public String getFileOrFolderName(){
+        List<String> names = new ArrayList<>();
+        for (WebElement each : fileAndFolderList) {
+            names.add(each.getText());
+        }
+        return names.get(0);
+    }
+    @FindBy(xpath = "//a[@class='action action-menu permanent']/span[@class]")
     public List<WebElement> actionIconAllFile;
+
+    @FindBy(xpath = "//div[@id='app-navigation']/ul/li/a")
+    public List<WebElement> navigationOptionsLeftSide;
+
+    @FindBy(xpath = "//span[.='LorensoWorld']")
+    public List<WebElement> deletedFilesAndFolders;
+
 }
