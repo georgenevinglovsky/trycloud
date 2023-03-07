@@ -32,4 +32,7 @@ public class FilesPage {
     @FindBy(xpath = "//span[.='LorensoWorld']")
     public List<WebElement> deletedFilesAndFolders;
 
+    @FindBy(xpath = "//div[@id='recommendations']")
+    public WebElement emptyplace;
+
 }
