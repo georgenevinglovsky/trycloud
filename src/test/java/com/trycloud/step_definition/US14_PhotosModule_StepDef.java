@@ -26,5 +26,6 @@ public class US14_PhotosModule_StepDef {
 //        System.out.println("photosModulePage.getPhotosModulesName() = " + photosModulePage.getPhotosModulesName());
 //        Assert.assertEquals(modules,photosModulePage.getPhotosModulesName());
         System.out.println("This user story has error!It will tested again after issue is solved");
+        System.out.println("Don't lose your mind");
     }
 }
