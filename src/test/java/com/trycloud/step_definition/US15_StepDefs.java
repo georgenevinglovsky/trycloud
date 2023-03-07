@@ -38,5 +38,4 @@ public class US15_StepDefs {
         String actual = Driver.getDriver().getTitle();
         Assert.assertTrue(string.equals(actual));
     }
-
 }
