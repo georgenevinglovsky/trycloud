@@ -3,7 +3,7 @@ Feature: Contact Module
 
   Background:
     Given user is logged to the Application
-  @wip
+
   Scenario: :  verify user access to the contacts module.
     Given user on the dashboard page
     When the user clicks the "Contacts" module
