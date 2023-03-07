@@ -7,4 +7,4 @@ Feature: Contact Module
   Scenario: :  verify user access to the contacts module.
     Given user on the dashboard page
     When the user clicks the "Contacts" module
-    Then verify the page title is "Contacts - [appname] - QA”
+    Then verify the page title is "Contacts - Trycloud QA"
