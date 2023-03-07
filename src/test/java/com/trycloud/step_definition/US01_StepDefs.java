@@ -30,4 +30,13 @@ public class US01_StepDefs {
     public void user_should_see_the_home_page() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(ConfigurationReader.getProperty("homepageTitle")));
     }
+    @When("user enter invalid {string} and {string}")
+    public void user_enter_invalid_and(String username, String password) {
+        loginPage.username.sendKeys(username);
+        loginPage.password.sendKeys(password);
+    }
+    @Then("verify {string} message should be displayed")
+    public void verify_message_should_be_displayed(String errorMessage) {
+        Assert.assertTrue(errorMessage.equals(loginPage.errorMessage.getText()));
+    }
 }
