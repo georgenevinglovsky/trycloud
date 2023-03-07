@@ -8,7 +8,7 @@ Feature: Login functionality
     And user input correct password
     And click login button
     Then user should see the home page
-@wip
+
   Scenario Outline: Verify user login fail with invalid credentials
     When user enter invalid "<username>" and "<password>"
     And click login button
