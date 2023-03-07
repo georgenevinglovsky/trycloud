@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 import java.util.List;
 
-public class US14_PhotosModule_StepDef {
+public class US14_PhotosModule_StepDef_v2 {
     PhotosModulePage photosModulePage = new PhotosModulePage();
     @Given("users login to the app")
     public void users_login_to_the_app() {
