@@ -14,6 +14,7 @@ public class US01_StepDefs {
     public void user_is_on_login_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
+
     @When("user input correct username")
     public void user_input_correct_username() {
         loginPage.username.sendKeys(ConfigurationReader.getProperty("username"));
