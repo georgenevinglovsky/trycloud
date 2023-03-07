@@ -10,6 +10,12 @@ public class WriteCommentsPage_FS {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "fileList")
-    public WebElement fileList;
+    @FindBy(xpath = "//a[@class='action action-menu permanent']//span[@class='icon icon-more']")
+    public WebElement dotDotDotIcon;
+
+    @FindBy (id="commentsTabView")
+    public WebElement commentsButton;
+
+    @FindBy (xpath = "//div[@id='rightClickMenu']//li[2]")
+    public WebElement detailsButton;
 }
