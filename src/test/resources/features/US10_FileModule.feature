@@ -1,4 +1,4 @@
-@wipLogin
+@wipFile
 Feature: As a user, I should be able to delete a file/folder.
 
   Background:
