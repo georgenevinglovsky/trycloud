@@ -1,5 +1,6 @@
 package com.trycloud.utilities;
 
+import com.trycloud.page.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +14,7 @@ public class BrowserUtils {
 
         }
     }
-    public static void clickOneOfTheDashboardOptions(String option){
+    public static void clickOneOfTheHeaderOptions(String option){
         String linkOption = "//a[@aria-label='"  + option + "']";
         WebElement link = Driver.getDriver().findElement(By.xpath(linkOption));
         link.click();
@@ -29,5 +30,13 @@ public class BrowserUtils {
     public static void clickActionOptions(String option){
         String locator = "//div[contains(@class,'fileActionsMenu')]//a[@data-action='"+option+ "']/span";
         Driver.getDriver().findElement(By.xpath(locator)).click();
+    }
+
+    static LoginPage loginPage = new LoginPage();
+    public static void login(){
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        loginPage.username.sendKeys(ConfigurationReader.getProperty("username"));
+        loginPage.password.sendKeys(ConfigurationReader.getProperty("password"));
+        loginPage.loginbtn.click();
     }
 }
