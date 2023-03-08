@@ -47,4 +47,19 @@ public class FilesPage {
     @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a/span[1]/span")
     public WebElement folderName;
 
+    @FindBy(xpath = "//div[@id='recommendations']")
+    public WebElement emptyplace;
+
+    @FindBy(xpath = "(//span[@class='innernametext'])[1]")
+    public WebElement firstFileInList;
+
+    @FindBy(xpath = "(//div//span[@class='icon icon-starred'])[1]")
+    public WebElement starIcon;
+
+    @FindBy(xpath = "//*[@id='fileList']/tr[1]/td[2]/div/ul/li[3]/a")
+    public WebElement favoriteOption;
+
+    @FindBy(xpath = "(//a[@data-action='menu'])[1]")
+    public WebElement actionOptnBtn;
+
 }

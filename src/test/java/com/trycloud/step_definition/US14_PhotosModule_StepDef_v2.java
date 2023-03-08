@@ -10,15 +10,18 @@ import java.util.List;
 
 public class US14_PhotosModule_StepDef_v2 {
     PhotosModulePage photosModulePage = new PhotosModulePage();
-    @Given("users login to the app")
-    public void users_login_to_the_app() {
+
+    @Given("users login to the app hannan")
+    public void usersLoginToTheAppHannan() {
         BrowserUtils.login();
     }
-    @When("the user clicks the {string} module")
-    public void the_user_clicks_the_module(String name) {
+    @When("the user clicks the {string} module hannan")
+    public void theUserClicksTheModuleHannan(String name) {
+
         BrowserUtils.sleep(2);
         BrowserUtils.clickOneOfTheHeaderOptions(name);
     }
+
     @Then("verify there are following sub-modules")
     public void verify_there_are_following_sub_modules(List<String> modules) {
 //        System.out.println("modules = " + modules);
@@ -27,4 +30,7 @@ public class US14_PhotosModule_StepDef_v2 {
         System.out.println("This user story has error!It will tested again after issue is solved");
         System.out.println("Don't lose your mind");
     }
+
+
+
 }
