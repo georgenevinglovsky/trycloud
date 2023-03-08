@@ -3,15 +3,21 @@ package com.trycloud.step_definition;
 import com.trycloud.page.FilesPage;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class US06_RemoveFileFromFavorites_StepDef {
+public class US06_RemoveFileFromFavorites_StepDef_version2 {
     FilesPage filesPage = new FilesPage();
     String nameOfFile;
+
+    @Given("user logged in successfully and on the home page")
+    public void userLoggedInSuccessfullyAndOnTheHomePage() {
+        BrowserUtils.login();
+    }
     @When("user choose the {string} option")
     public void user_choose_the_option(String string) {
 
@@ -56,4 +62,6 @@ public class US06_RemoveFileFromFavorites_StepDef {
         }
 
     }
+
+
 }
