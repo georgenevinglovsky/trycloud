@@ -42,8 +42,8 @@ FilesPage filesPage = new FilesPage();
     }
     @Then("Verify the file is displayed on the page")
     public void verify_the_file_is_displayed_on_the_page() {
-    filesPage.verifyFileUploaded("Location");
+        BrowserUtils.sleep(3);
+    Assert.assertTrue(filesPage.newUploadedFile.getText().equals("Locations"));
     }
-
 
 }

@@ -36,8 +36,6 @@ public class FilesPage {
         return names2.get(0);
     }
 
-
-
     @FindBy(xpath = "//span[contains(@class, 'extra-data')]")
     public List <WebElement> fileUploaded;
     public void verifyFileUploaded(String fileName) {
@@ -63,7 +61,8 @@ public class FilesPage {
     @FindBy(xpath = "//input[@type='file']")
     public WebElement uploadButton;
 
-
+    @FindBy(xpath = "//span[.='Locations']")
+    public WebElement newUploadedFile;
 
 
 
