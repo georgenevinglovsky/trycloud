@@ -3,7 +3,8 @@ Feature: As a user, I should be able to remove files from favorites.
 
 
   Background:
-    Given : user logged in successfully and on the home page
+    Given user logged in successfully and on the home page
+
     Scenario:
       When the user clicks the "Files" module
       When user click action-icon from any file on the page
