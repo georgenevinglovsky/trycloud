@@ -18,4 +18,9 @@ public class WriteCommentsPage_FS {
 
     @FindBy (xpath = "//div[@id='rightClickMenu']//li[2]")
     public WebElement detailsButton;
+
+    @FindBy (xpath = "//input[@class='submit icon-confirm has-tooltip']")
+    public WebElement postButton;
+
+
 }
