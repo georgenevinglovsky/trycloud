@@ -32,4 +32,19 @@ public class FilesPage {
     @FindBy(xpath = "//span[.='LorensoWorld']")
     public List<WebElement> deletedFilesAndFolders;
 
+    @FindBy(xpath = "//a[@class='button new']")
+    public WebElement addIcon;
+
+    @FindBy(xpath = "//a[@class='menuitem']")
+    public WebElement newFolderButton;
+
+    @FindBy(xpath = "//input[@id='view13-input-folder']")
+    public WebElement typeInput;
+
+    @FindBy(xpath = "//input[@class='icon-confirm']")
+    public WebElement submitButton;
+
+    @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a/span[1]/span")
+    public WebElement folderName;
+
 }
