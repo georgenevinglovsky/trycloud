@@ -1,6 +1,7 @@
 package com.trycloud.page;
 
 import com.trycloud.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,6 +24,28 @@ public class FilesPage {
         }
         return names.get(0);
     }
+
+    @FindBy (xpath = "//tr[@data-mime='httpd/unix-directory']//a")
+    public List<WebElement>foldersList;
+
+    public String getFolderName(){
+       List<String> names2 = new ArrayList<>();
+        for (WebElement each : foldersList) {
+            names2.add((each.getText()));
+        }
+        return names2.get(0);
+    }
+
+    @FindBy(xpath = "//span[contains(@class, 'extra-data')]")
+    public List <WebElement> fileUploaded;
+    public void verifyFileUploaded(String fileName) {
+        List<String> filesList = new ArrayList<>();
+        for (WebElement each : fileUploaded) {
+            filesList.add(each.getAttribute("title"));
+        }
+        Assert.assertTrue(filesList.contains(fileName));
+    }
+
     @FindBy(xpath = "//a[@class='action action-menu permanent']/span[@class]")
     public List<WebElement> actionIconAllFile;
 
@@ -46,5 +69,16 @@ public class FilesPage {
 
     @FindBy(xpath = "(//a[@data-action='menu'])[1]")
     public WebElement actionOptnBtn;
+
+    @FindBy(xpath = "//a[@class ='button new']")
+    public WebElement addIcon ;
+
+    @FindBy(xpath = "//input[@type='file']")
+    public WebElement uploadButton;
+
+    @FindBy(xpath = "//span[.='Locations']")
+    public WebElement newUploadedFile;
+
+
 
 }
