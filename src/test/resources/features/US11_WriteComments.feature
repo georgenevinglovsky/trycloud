@@ -1,14 +1,11 @@
-Feature: As a user, I should be able to write comments to files/folders
 @faith
+Feature: As a user, I should be able to write comments to files folders
 
-Background:
-  Given : user logged in successfully and on the home page
-
-  Scenario : Verify users to write comments to files/folder
-  When the user clicks the "Files" module
-  And user click action-icon from any file on the page
-  And user choose the "Details" option
-  And user write a "you did good" inside the input box
-  And user click the submit button to post it
-  Then Verify the comment is displayed in the comment section
-
+  Scenario: Verify user to write comments to files folder
+    Given Users at the Dashboard page
+    When Users be able to click on "Files" module and landing on Files page
+    When Users should be able to click on dot dot dot ... icon on each file list
+    And Users should be able to click on "details" After actions menu show up
+    And User should be able to click on "commentsTabView"
+    And Users should be able to write "Our team got such an amazing work ethic" and click post the comment
+    Then The posted comments should displayed under comment box
