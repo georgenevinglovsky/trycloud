@@ -1,7 +1,7 @@
 Feature:  As a user, I should be able to upload files to existing folders on the Files page.
 
 Background:
-  Given user on the dashboard page
+  Given user is on the dashboard page
 
   @US09
   Scenario:  Verify users can upload a file to an existing folder.

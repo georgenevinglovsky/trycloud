@@ -12,7 +12,7 @@ public class US09_UploadFiles_v2 {
 DashboardPage dashboardPage = new DashboardPage();
 FilesPage filesPage = new FilesPage();
 
-    @Given("user on the dashboard page")
+    @Given("user is on the dashboard page")
     public void user_on_the_dashboard_page() {
         BrowserUtils.login();
         BrowserUtils.sleep(2);
