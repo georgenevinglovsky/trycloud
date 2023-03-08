@@ -1,20 +1,13 @@
 package com.trycloud.step_definition;
 
-import com.trycloud.page.DashboardPage;
-import com.trycloud.page.FilesPage;
 import com.trycloud.page.WriteCommentsPage_FS;
 import com.trycloud.utilities.BrowserUtils;
-import com.trycloud.utilities.ConfigurationReader;
-import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
-
-import java.io.IOException;
 
 public class US11_WriteComments_StepDef {
 
