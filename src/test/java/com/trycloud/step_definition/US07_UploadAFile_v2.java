@@ -27,7 +27,6 @@ public class US07_UploadAFile_v2 {
         BrowserUtils.sleep(2);
         Assert.assertEquals(actualHeaderText, expectedText);
 
-
     }
     @Then("verify the file is displayed on the page")
     public void verify_the_file_is_displayed_on_the_page() {
