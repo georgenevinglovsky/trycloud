@@ -17,6 +17,4 @@ import org.junit.runner.RunWith;
         tags = "@US09"
 )
 public class CukesRunner {
-
-
 }
