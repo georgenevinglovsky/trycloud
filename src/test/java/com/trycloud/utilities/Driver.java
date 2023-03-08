@@ -110,6 +110,7 @@ public class Driver {
                     break;
             }
             driverPool.get().manage().window().setSize(new Dimension(1280, 920));
+            driverPool.get().manage().deleteAllCookies();
         }
 
         return driverPool.get();
