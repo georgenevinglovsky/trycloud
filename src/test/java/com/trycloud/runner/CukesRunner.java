@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         publish = true,
         features = "src/test/resources/features",//content
         glue = "com/trycloud/step_definition",//source
-        dryRun = false,
-        tags = ""
+        dryRun = true,
+        tags = "faith"
 )
 public class CukesRunner {
 }
