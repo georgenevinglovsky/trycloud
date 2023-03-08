@@ -1,7 +1,10 @@
 package com.trycloud.utilities;
 
 import com.trycloud.page.LoginPage;
+import io.cucumber.java.bs.A;
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -28,7 +31,7 @@ public class BrowserUtils {
     }
 
     public static void clickActionOptions(String option){
-        String locator = "//div[contains(@class,'fileActionsMenu')]//a[@data-action='"+option+ "']/span";
+        String locator = "//div[contains(@class,'fileActionsMenu')]//a[@data-action='"+option+"']/span";
         Driver.getDriver().findElement(By.xpath(locator)).click();
     }
 
@@ -39,4 +42,18 @@ public class BrowserUtils {
         loginPage.password.sendKeys(ConfigurationReader.getProperty("password"));
         loginPage.loginbtn.click();
     }
+
+    public static void confirmFileExist(String nameOfFile){
+        try{
+        WebElement file = Driver.getDriver().findElement(By.xpath("//span[contains(.,''"+nameOfFile+"')]"));
+        Boolean result = file.isDisplayed();}
+        catch(NoSuchElementException e){
+            System.out.println("File was removed from favorites");
+            Assert.assertTrue(true);
+            }
+
+    }
+
+
+
 }

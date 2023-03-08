@@ -20,13 +20,15 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 public class US10_FileModule_v2 {
         FilesPage filePage = new FilesPage();
-        @Given(": user logged in successfully and on the home page")
-        public void user_logged_in_successfully_and_on_the_home_page() {
-            BrowserUtils.login();
-            Assert.assertTrue(Driver.getDriver().getTitle().contains(ConfigurationReader.getProperty("homepageTitle")));
-        }
 
-        @When("the user clicks on the {string} module")
+    @Given("user logged in successfully and on the home page hannan")
+    public void userLoggedInSuccessfullyAndOnTheHomePageHannan() {
+        BrowserUtils.login();
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(ConfigurationReader.getProperty("homepageTitle")));
+
+    }
+
+        @When("the user clicks on the {string} modulee")
         public void theUserClicksOnTheModule(String moduleName) {
             BrowserUtils.clickOneOfTheHeaderOptions(moduleName);
         }
@@ -52,4 +54,6 @@ public class US10_FileModule_v2 {
                 }
             }
         }
+
+
 }

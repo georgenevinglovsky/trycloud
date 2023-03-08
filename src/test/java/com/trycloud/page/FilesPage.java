@@ -55,6 +55,21 @@ public class FilesPage {
     @FindBy(xpath = "//span[.='LorensoWorld']")
     public List<WebElement> deletedFilesAndFolders;
 
+    @FindBy(xpath = "//div[@id='recommendations']")
+    public WebElement emptyplace;
+
+    @FindBy(xpath = "(//span[@class='innernametext'])[1]")
+    public WebElement firstFileInList;
+
+    @FindBy(xpath = "(//div//span[@class='icon icon-starred'])[1]")
+    public WebElement starIcon;
+
+    @FindBy(xpath = "//*[@id='fileList']/tr[1]/td[2]/div/ul/li[3]/a")
+    public WebElement favoriteOption;
+
+    @FindBy(xpath = "(//a[@data-action='menu'])[1]")
+    public WebElement actionOptnBtn;
+
     @FindBy(xpath = "//a[@class ='button new']")
     public WebElement addIcon ;
 
