@@ -15,8 +15,8 @@ public class US11_WriteComments_StepDef {
     public void userClickActionIconFromAnyFileOnThePage() {
     }
 
-    @And("user write a comment inside the input box")
-    public void userWriteACommentInsideTheInputBox() {
+    @And("user write a {string} inside the input box")
+    public void userWriteAInsideTheInputBox(String comments) {
     }
 
     @And("user click the submit button to post it")
@@ -26,4 +26,6 @@ public class US11_WriteComments_StepDef {
     @Then("Verify the comment is displayed in the comment section")
     public void verifyTheCommentIsDisplayedInTheCommentSection() {
     }
+
+
 }
