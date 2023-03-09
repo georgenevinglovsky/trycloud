@@ -70,8 +70,7 @@ public class FilesPage {
     @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a/span[1]/span")
     public WebElement folderName;
 
-    @FindBy(xpath = "//span[@class='icon icon-add']")
-    public WebElement addIcon;
+
 
     @FindBy(xpath = "//span[@class='displayname']")
     public WebElement uploadFile;
