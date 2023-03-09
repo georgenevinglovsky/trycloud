@@ -55,6 +55,12 @@ public class FilesPage {
     @FindBy(xpath = "//span[.='LorensoWorld']")
     public List<WebElement> deletedFilesAndFolders;
 
+    @FindBy(xpath = "//span[@class='icon icon-add']")
+    public WebElement addIcon;
+
+    @FindBy(xpath = "//span[@class='displayname']")
+    public WebElement uploadFile;
+
     @FindBy(xpath = "//div[@id='recommendations']")
     public WebElement emptyplace;
 
@@ -69,9 +75,6 @@ public class FilesPage {
 
     @FindBy(xpath = "(//a[@data-action='menu'])[1]")
     public WebElement actionOptnBtn;
-
-    @FindBy(xpath = "//a[@class ='button new']")
-    public WebElement addIcon ;
 
     @FindBy(xpath = "//input[@type='file']")
     public WebElement uploadButton;
