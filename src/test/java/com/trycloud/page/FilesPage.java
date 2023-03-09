@@ -1,6 +1,7 @@
 package com.trycloud.page;
 
 import com.trycloud.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -74,9 +75,6 @@ public class FilesPage {
 
     @FindBy(xpath = "(//a[@data-action='menu'])[1]")
     public WebElement actionOptnBtn;
-
-    @FindBy(xpath = "//a[@class ='button new']")
-    public WebElement addIcon ;
 
     @FindBy(xpath = "//input[@type='file']")
     public WebElement uploadButton;
