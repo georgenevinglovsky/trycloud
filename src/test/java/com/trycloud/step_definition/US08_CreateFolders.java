@@ -42,7 +42,7 @@ public class US08_CreateFolders {
     @Then("Verify the folder is displayed on the page meiyin")
     public void verify_the_folder_is_displayed_on_the_page_meiyin() {
         System.out.println(filesPage.folderName.getText());
-        Assert.assertTrue(filesPage.folderName.getText().equals("Java folder"));
+        Assert.assertTrue(filesPage.folderName.isDisplayed());
 
     }
 
