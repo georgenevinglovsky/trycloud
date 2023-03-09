@@ -82,6 +82,34 @@ public class FilesPage {
     @FindBy(xpath = "//span[.='Locations']")
     public WebElement newUploadedFile;
 
+    @FindBy(xpath = "//button[@class='settings-button']")
+    public  WebElement settingButton;
+
+
+    @FindBy(xpath = "//input[@id='showRichWorkspacesToggle']")
+    public  WebElement showRichWorkspacesToggle;
+
+    @FindBy(xpath = "//input[@id='recommendationsEnabledToggle']")
+    public  WebElement recommendationsEnabledToggle;
+
+    @FindBy(xpath = "//input[@id='showhiddenfilesToggle']")
+    public  WebElement showhiddenfilesToggle;
+
+    @FindBy(xpath = "//label[@for='showRichWorkspacesToggle']")
+    public  WebElement showRichWorkspacesToggleLabel;
+
+    @FindBy(xpath = "//label[@for='recommendationsEnabledToggle']")
+    public  WebElement recommendationsEnabledTogglLabel;
+
+    @FindBy(xpath = "//label[@for='showhiddenfilesToggle']")
+    public  WebElement showhiddenfilesToggleLabel;
+
+    @FindBy(xpath = "//p[@class='is-empty is-editor-empty']")
+    public  WebElement notesParagraph;
+
+
+    @FindBy(xpath = "//div[@id='recommendations']")
+    public  WebElement recommendations;
 
 
 }
