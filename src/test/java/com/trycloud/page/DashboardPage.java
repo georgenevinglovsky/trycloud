@@ -26,4 +26,25 @@ public class DashboardPage {
         link.click();
 
     }
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a")
+    public List<WebElement> modules;
+
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Files']")
+    public WebElement Files;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Dashboard']")
+    public WebElement dashboard;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Photos']")
+    public WebElement Photos;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Activity']")
+    public WebElement Activity;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Talk']")
+    public WebElement Talk;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Contacts']")
+    public WebElement Contacts;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Circles']")
+    public WebElement Circles;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Calendar']")
+    public WebElement Calendar;
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a[@aria-label='Deck']")
+    public WebElement Deck;
 }
