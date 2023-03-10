@@ -17,6 +17,7 @@ public class US04_FileModule_StepDefs {
 
     @When("user click the top-left checkbox of the table")
     public void user_click_the_top_left_checkbox_of_the_table() {
+        BrowserUtils.sleep(5);
         filesPage.allFilesCheckBox.click();
         BrowserUtils.sleep(5);
 

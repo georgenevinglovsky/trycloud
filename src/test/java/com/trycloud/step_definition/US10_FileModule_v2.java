@@ -34,7 +34,7 @@ public class US10_FileModule_v2 {
         }
         @When("user click action-icon from any file on the page")
         public void user_click_action_icon_from_any_file_on_the_page() {
-            BrowserUtils.sleep(4);
+            BrowserUtils.sleep(6);
             filePage.actionIconAllFile.get(0).click();
         }
         @When("user choose the {string} folder option")
