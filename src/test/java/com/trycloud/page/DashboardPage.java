@@ -26,4 +26,6 @@ public class DashboardPage {
         link.click();
 
     }
+    @FindBy(xpath = "//ul[@id='appmenu']/li/a")
+    public List<WebElement> modules;
 }
