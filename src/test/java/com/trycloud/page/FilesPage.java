@@ -125,5 +125,11 @@ public class FilesPage {
     @FindBy(xpath = "//div[@id='recommendations']")
     public  WebElement recommendations;
 
+    @FindBy(xpath = "//label[@for='select_all_files']")
+    public WebElement allFilesCheckBox;
+
+    @FindBy(xpath = "//tbody[@id='fileList']//input[@type='checkbox']")
+    public List<WebElement> filesCheckboxes;
+
 
 }
