@@ -6,7 +6,7 @@ Feature: As a user, I should be accessing all the main modules of the app.
     When user input correct username
     And user input correct password
     And click login button
-    Then user should see the home page
+    And user should see the home page
 
   Scenario:  Verify users accessing all the main modules of the app.
 
