@@ -34,7 +34,7 @@ public class US13_StepDefs {
     }
     @Then("verify the app displays {string} in the expected result option")
     public void verify_the_app_displays_in_the_expected_result_option(String string) {
-        BrowserUtils.sleep(4);
+        BrowserUtils.sleep(7);
         Assert.assertTrue(dashboardPage_hv.searchResult.getText().toLowerCase().contains(string));
     }
 

@@ -10,10 +10,7 @@ import org.junit.Assert;
 public class US08_CreateFolders {
     FilesPage filesPage = new FilesPage();
 
-    @Given(": user logged in successfully and on the home page meiyin")
-    public void user_logged_in_successfully_and_on_the_home_page_meiyin() {
-        BrowserUtils.login();
-    }
+
     @When("the user clicks the {string} module meiyin")
     public void the_user_clicks_the_module_meiyin(String name) {
         BrowserUtils.clickOneOfTheHeaderOptions(name);

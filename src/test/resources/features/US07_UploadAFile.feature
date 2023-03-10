@@ -1,6 +1,10 @@
 Feature: As a user,I should be able to upload a file.
   Background:
-    Given  user logged in successfully and on the home page aimiati
+    Given user is on login page
+    When user input correct username
+    And user input correct password
+    And click login button
+    Then user should see the home page
 
  @US07
   Scenario: verify users to upload a file from Files aimaiti

@@ -11,10 +11,7 @@ import java.util.List;
 public class US14_PhotosModule_StepDef_v2 {
     PhotosModulePage photosModulePage = new PhotosModulePage();
 
-    @Given("users login to the app hannan")
-    public void usersLoginToTheAppHannan() {
-        BrowserUtils.login();
-    }
+
     @When("the user clicks the {string} module hannan")
     public void theUserClicksTheModuleHannan(String name) {
 

@@ -1,7 +1,11 @@
 Feature: As a user, I should be able to delete a file/folder.
 
   Background:
-    Given user logged in successfully and on the home page hannan
+    Given user is on login page
+    When user input correct username
+    And user input correct password
+    And click login button
+    Then user should see the home page
   @US10
   Scenario: Verify users delete a file/folder
     When the user clicks on the "Files" modulee

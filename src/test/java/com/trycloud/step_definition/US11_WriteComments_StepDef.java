@@ -13,10 +13,6 @@ public class US11_WriteComments_StepDef {
 
     WriteCommentsPage_FS commentsOnFile = new WriteCommentsPage_FS();
 
-    @Given("Users at the Dashboard page")
-    public void users_at_the_dashboard_page() {
-        BrowserUtils.login();
-    }
 
     @When("Users be able to click on {string} module and landing on Files page")
     public void usersBeAbleToClickOnModuleAndLandingOnFilesPage(String files) {

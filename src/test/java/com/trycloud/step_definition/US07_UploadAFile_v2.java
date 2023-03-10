@@ -14,10 +14,7 @@ public class US07_UploadAFile_v2 {
 
 
 
-    @Given("user logged in successfully and on the home page aimiati")
-    public void userLoggedInSuccessfullyAndOnTheHomePageAimiati() {
-        BrowserUtils.login();
-    }
+
 
     @When("the user clicks the {string} module aimaiti")
     public void theUserClicksTheModuleAimaiti(String name) {

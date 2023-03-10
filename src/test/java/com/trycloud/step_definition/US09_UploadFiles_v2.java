@@ -13,12 +13,7 @@ public class US09_UploadFiles_v2 {
 DashboardPage dashboardPage = new DashboardPage();
 FilesPage filesPage = new FilesPage();
 
-    @Given("user is on the dashboard page")
-    public void user_on_the_dashboard_page() {
-        BrowserUtils.login();
-        BrowserUtils.sleep(2);
 
-    }
 
     @When("the user clicks  the {string} module")
     public void theUserClicksTheModule(String file) {

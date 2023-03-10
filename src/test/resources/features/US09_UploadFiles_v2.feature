@@ -1,8 +1,11 @@
 Feature:  As a user, I should be able to upload files to existing folders on the Files page.
 
-Background:
-  Given user is on the dashboard page
-
+  Background:
+    Given user is on login page
+    When user input correct username
+    And user input correct password
+    And click login button
+    Then user should see the home page
   @US09
   Scenario:  Verify users can upload a file to an existing folder.
 
